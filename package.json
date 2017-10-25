@@ -1,9 +1,9 @@
 {
-  "name": "base-api",
+  "name": "node-mikrotik-api",
   "version": "1.0.0",
-  "description": "Basic node express api",
+  "description": "Mikrotik router os api",
   "main": "entry.js",
-  "repository": "https://github.com/devilhanzo/base-api.git",
+  "repository": "https://github.com/devilhanzo/node-mikrotik-api.git",
   "author": "Devilhanzo",
   "license": "MIT",
   "dependencies": {
