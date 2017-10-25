@@ -1,9 +1,9 @@
 {
-  "name": "node-mikrotik-api",
+  "name": "base-api",
   "version": "1.0.0",
-  "description": "Mikrotik API on Node JS",
+  "description": "Basic node express api",
   "main": "entry.js",
-  "repository": "https://github.com/devilhanzo/node-mikrotik-api.git",
+  "repository": "https://github.com/devilhanzo/base-api.git",
   "author": "Devilhanzo",
   "license": "MIT",
   "dependencies": {

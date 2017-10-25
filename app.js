@@ -2,7 +2,7 @@
  * @Author: puck.solo 
  * @Date: 2017-10-25 13:48:29 
  * @Last Modified by: puck.solo
- * @Last Modified time: 2017-10-25 13:52:33
+ * @Last Modified time: 2017-10-25 14:04:55
  */
 
 const express = require('express');
@@ -16,11 +16,6 @@ const config = require('./config.js');
 
 
 const indexRoute = require('./routes/index');
-// const radgroupreplyRoute = require('./routes/radgroupreply');
-// const radcheckRoute = require('./routes/radcheck');
-// const radusergroupRoute = require('./routes/radusergroup');
-// const employeeRoute = require('./routes/employee');
-// const radiusloginRoute = require('./routes/radiuslogin');
 const app = express();
 
 // view engine setup
@@ -37,11 +32,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', indexRoute);
-// app.use('/radcheck', radcheckRoute);
-// app.use('/radgroupreply', radgroupreplyRoute);
-// app.use('/radusergroup', radusergroupRoute);
-// app.use('/employee', employeeRoute);
-// app.use('/radiuslogin', radiusloginRoute);
 
 // error handlers
 
