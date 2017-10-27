@@ -2,7 +2,7 @@
  * @Author: puck.solo 
  * @Date: 2017-10-25 13:48:29 
  * @Last Modified by: puck.solo
- * @Last Modified time: 2017-10-25 15:49:51
+ * @Last Modified time: 2017-10-27 15:50:09
  */
 
 const express = require('express');
@@ -33,8 +33,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+
 app.use('/', indexRoute);
 app.use('/hotspot', hotspotRoute);
+
+
 
 // error handlers
 
