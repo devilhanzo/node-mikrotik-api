@@ -1,19 +1,15 @@
 module.exports = {
-    sql: {
-      host: process.env.SQL_HOST,
-      port: process.env.SQL_PORT,
-      user: process.env.SQL_USERNAME,
-      password: process.env.SQL_PASSWORD,
-      database: process.env.SQL_DATABASE,
-      multipleStatements: true,
+    router: {
+      host: process.env.ROUTER_HOST,
+      port: process.env.ROUTER_PORT,
+      user: process.env.ROUTER_USERNAME,
+      password: process.env.ROUTER_PASSWORD,
     },
-    sql2: {
-      host: process.env.SQL2_HOST,
-      port: process.env.SQL2_PORT,
-      user: process.env.SQL2_USERNAME,
-      password: process.env.SQL2_PASSWORD,
-      database: process.env.SQL2_DATABASE,
-      multipleStatements: true
+    router2: {
+      host: process.env.ROUTER2_HOST,
+      port: process.env.ROUTER2_PORT,
+      user: process.env.ROUTER2_USERNAME,
+      password: process.env.ROUTER2_PASSWORD,
     },
     secret: process.env.SECRET,
   };
