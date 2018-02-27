@@ -17,6 +17,7 @@ const config = require('./config.js');
 
 const indexRoute = require('./routes/index');
 const hotspotRoute = require('./routes/hotspot.js');
+const addressRoute = require('./routes/address.js');
 
 const app = express();
 
@@ -35,7 +36,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', indexRoute);
-app.use('/hotspot', hotspotRoute);
+app.use('/ip/hotspot', hotspotRoute);
+app.use('/ip/address', addressRoute);
 
 
 
