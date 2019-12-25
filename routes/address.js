@@ -9,7 +9,9 @@ const password = config.router.password;
 
 router.get('/', (req, res, next) => {
     var connection = MikroNode.getConnection(host, user, password, {
-        closeOnDone : true
+        timeout : 15,
+        closeOnDone : true,
+        closeOnTimeout: true,
     });
     
     connection.getConnectPromise().then(function(conn) {
@@ -24,13 +26,17 @@ router.get('/', (req, res, next) => {
         }) .catch(function(error) {
             res.send({ok:false, reason: error})
         })
+    }).catch(function(error) {
+        res.send({ok:false, reason: error});
     });
 });
 
 router.get('/detail/:id', (req, res, next) => {
     let id = req.params.id;
     var connection = MikroNode.getConnection(host, user, password, {
-        closeOnDone : true
+        timeout : 15,
+        closeOnDone : true,
+        closeOnTimeout: true,
     });
     
     connection.getConnectPromise().then(function(conn) {
@@ -41,6 +47,8 @@ router.get('/detail/:id', (req, res, next) => {
         });
     }) .catch(function(error) {
         res.send({ok:false, reason: error})
-    })
+    }).catch(function(error) {
+        res.send({ok:false, reason: error});
+    });
 });
 module.exports = router;
