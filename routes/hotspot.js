@@ -15,7 +15,9 @@ const password = config.router.password;
 
 router.get('/active', (req, res, next) => {
     var connection = MikroNode.getConnection(host, user, password, {
-        closeOnDone : true
+        timeout : 5,
+        closeOnDone : true,
+        closeOnTimeout: true,
     });
     
     connection.getConnectPromise().then(function(conn) {
@@ -33,7 +35,9 @@ router.get('/active', (req, res, next) => {
 });
 router.get('/active/find/:username', (req, res, next) => {
     var connection = MikroNode.getConnection(host, user, password, {
-        closeOnDone : true
+        timeout : 5,
+        closeOnDone : true,
+        closeOnTimeout: true,
     });
     let username = req.params.username;
     
@@ -51,7 +55,9 @@ router.get('/active/find/:username', (req, res, next) => {
 router.delete('/active/:id', (req, res, next)=> {
     let id = req.params.id;
     var connection = MikroNode.getConnection(host, user, password, {
-        closeOnDone : true
+        timeout : 5,
+        closeOnDone : true,
+        closeOnTimeout: true,
     });
     connection.getConnectPromise().then(function(conn) {
         conn.getCommandPromise(['/ip/hotspot/active/remove','=.id='+id]).then(function resolved(result) {
