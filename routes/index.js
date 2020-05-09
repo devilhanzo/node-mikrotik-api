@@ -11,7 +11,7 @@ router.get('/', (req, res, next) => {
     res.send({ ok: true, message: 'Welcome to Mikrotik RouterOS API' });
 });
 router.get('/version', (req, res, next) => {
-    res.send({ ok: true, version: 'v1.0.0', build: '20171025' });
+    res.send({ ok: true, version: 'v1.1.0', build: '20200510' });
 });
 
 module.exports = router;
