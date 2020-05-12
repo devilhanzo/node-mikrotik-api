@@ -4,8 +4,8 @@ Node Express Mikrotik API
 Version 1.1.0
 <br>
 Feature:<br>
--Show Mikrotik Interface IP Address<br>
--Find and Disconnect Mikrotik Hotspot active users<br>
+-Show Mikrotik Router Interface IP Address<br>
+-Find and Disconnect Mikrotik Router Hotspot active users<br>
 
 Method GET<br>
 http://localhost:50453/ip/address List all ip address setup on interfaces<br>
