@@ -18,9 +18,9 @@ Install:<br>
 <br>
 Usage:<br>
 Method GET<br>
-  http://localhost:50453/ip/address  List all ip address setup on interfaces<br>
-  http://localhost:50453/ip/hotspot/active  List all hotspot active users<br>
-  http://localhost:50453/ip/hotspot/active/find/puck  Find hotspot active user by username "puck"<br>
+  <a href>http://localhost:50453/ip/address</a>  List all ip address setup on interfaces<br>
+  <a href>http://localhost:50453/ip/hotspot/active</a> List all hotspot active users<br>
+  <a href>http://localhost:50453/ip/hotspot/active/find/puck</a>  Find hotspot active user by username "puck"<br>
 <br>
 Method DELETE<br>
-  http://localhost:50453/ip/hotspot/active/*ID  Disconnect hotspot active user by *ID of result of finding hotspot active user<br>
+  <a href>http://localhost:50453/ip/hotspot/active/*ID</a>  Disconnect hotspot active user by *ID of result of finding hotspot active user<br>
