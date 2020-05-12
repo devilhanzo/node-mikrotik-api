@@ -18,6 +18,8 @@ Install:<br>
 <br>
 Usage:<br>
 Method GET<br>
+  <a href>http://localhost:50453</a>  API welcom page<br>
+  <a href>http://localhost:50453/version</a>  Show api version<br>
   <a href>http://localhost:50453/ip/address</a>  List all ip address setup on interfaces<br>
   <a href>http://localhost:50453/ip/hotspot/active</a> List all hotspot active users<br>
   <a href>http://localhost:50453/ip/hotspot/active/find/puck</a>  Find hotspot active user by username "puck"<br>
