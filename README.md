@@ -4,6 +4,7 @@ Node Express Mikrotik API
 Version 1.1.0
 <br>
 Feature:<br>
+-Login method are supported in versions above 6.45.1<br>
 -Show Mikrotik Router Interface IP Address<br>
 -Find and Disconnect Mikrotik Router Hotspot active users<br>
 
