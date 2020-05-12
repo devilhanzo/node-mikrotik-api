@@ -23,7 +23,7 @@ Method GET<br>
   <a href>http://localhost:50453/version</a>  Show API version<br>
   <a href>http://localhost:50453/ip/address</a>  List all ip address setup on interfaces<br>
   <a href>http://localhost:50453/ip/hotspot/active</a> List all hotspot active users<br>
-  <a href>http://localhost:50453/ip/hotspot/active/find/puck</a>  Find hotspot active user by username "puck"<br>
+  <a href>http://localhost:50453/ip/hotspot/active/find/puck</a>  Search hotspot active user by username "puck"<br>
 <br>
 Method DELETE<br>
-  <a href>http://localhost:50453/ip/hotspot/active/*ID</a>  Disconnect hotspot active user by *ID from finding result of hotspot active user<br>
+  <a href>http://localhost:50453/ip/hotspot/active/*ID</a>  Disconnect hotspot active user by *ID from search results of hotspot active user<br>
