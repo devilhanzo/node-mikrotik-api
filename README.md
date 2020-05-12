@@ -26,4 +26,4 @@ Method GET<br>
   <a href>http://localhost:50453/ip/hotspot/active/find/puck</a>  Search hotspot active user by username "puck"<br>
 <br>
 Method DELETE<br>
-  <a href>http://localhost:50453/ip/hotspot/active/*ID</a>  Disconnect hotspot active user by *ID from search results of hotspot active user<br>
+  <a href>http://localhost:50453/ip/hotspot/active/.id</a>  Disconnect hotspot active user by .id from search results of hotspot active user<br>
