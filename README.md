@@ -24,6 +24,8 @@ Method GET<br>
   <a href>http://localhost:50453/ip/address</a>  List all ip address setup on interfaces<br>
   <a href>http://localhost:50453/ip/hotspot/active</a> List all hotspot active users<br>
   <a href>http://localhost:50453/ip/hotspot/active/find/puck</a>  Search hotspot active user by username "puck"<br>
+  <a href>http://localhost:50453/ip/firewall/address-list</a> List all firewall address-list<br>
+  <a href>http://localhost:50453/ip/firewall/address-list/find/445-Malware</a> Find address-list by list name "445-Malware"<br>
 <br>
 Method DELETE<br>
   <a href>http://localhost:50453/ip/hotspot/active/.id</a>  Disconnect hotspot active user by .id from search results of hotspot active user<br>
