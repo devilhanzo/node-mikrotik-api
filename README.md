@@ -14,7 +14,7 @@ Install:<br>
 1. Rename env.txt to .env
 2. Change config in .env to your environment
 3. Install package #npm install
-4. Start server  #node ./bin/wwww
+4. Start server  #node ./bin/www
 <br>
 Usage:<br>
 <br>
